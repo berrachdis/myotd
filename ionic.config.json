@@ -1,0 +1,7 @@
+{
+  "name": "myOtd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
