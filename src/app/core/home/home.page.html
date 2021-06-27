@@ -1,19 +1,50 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
+  <ion-toolbar color="primary">
+    <ion-title slot="start">
+      Home
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
+  <ion-header>
+    <div id="container-header">
+      <ion-item-divider>
+
+        <ion-avatar style="height: 100px; width: 130px;">
+          <img
+            src="https://media-exp3.licdn.com/dms/image/C4D03AQHZUjhINRA1ZQ/profile-displayphoto-shrink_400_400/0/1592218764558?e=1629331200&v=beta&t=_1Dhd0zAd8_5tjclQXtXA7bJqm_QBb_0jFfapRnImsk">
+        </ion-avatar>
+
+        <ion-item lines="none" style="width: 100%">
+          <ion-label class="ion-text-center">
+            Publications <br/><br/>25
+          </ion-label>
+          <ion-label class="ion-text-center">
+            Collections <br/><br/>25
+          </ion-label>
+        </ion-item>
+      </ion-item-divider>
+
+      <app-pin id="filter" [pin]="pin" (pinOutput)="onSelectedPin($event)"></app-pin>
+
+      <ion-segment value="publications">
+        <ion-segment-button value="publications">
+          <ion-label>Publications</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="collections">
+          <ion-label>Collections</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
   </ion-header>
 
   <div id="container">
-    <app-pin id="filter" [pin]="pin" (pinOutput)="onSelectedPin($event)"></app-pin>
+
   </div>
 </ion-content>
