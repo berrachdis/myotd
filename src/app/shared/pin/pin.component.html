@@ -1,0 +1,4 @@
+<div id="pin" *ngIf="!!selectedPin">
+  <ion-button color="primary" (click)="goBack()">{{selectedPin.name == 'ALL' ? selectedPin.name : '<<'}}</ion-button>
+  <ion-button *ngFor="let child of selectedPin.childPin" color="light" (click)="filter(child)">{{child.name}}</ion-button>
+</div>
