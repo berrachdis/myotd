@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import {PinComponent} from "../../shared/pin/pin.component";
+import {ImageComponent} from "../../shared/image/image.component";
 
 
 @NgModule({
@@ -15,6 +16,6 @@ import {PinComponent} from "../../shared/pin/pin.component";
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, PinComponent]
+  declarations: [HomePage, PinComponent, ImageComponent]
 })
 export class HomePageModule {}

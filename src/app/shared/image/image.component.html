@@ -1,0 +1,7 @@
+<ion-row style="height: 460px">
+  <ion-col *ngFor="let collection of collections">
+    <div *ngFor="let image of collection.images">
+      <ion-img style="width: 150px; height: 150px;" [src]="image.url"></ion-img>
+    </div>
+  </ion-col>
+</ion-row>

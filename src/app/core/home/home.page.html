@@ -12,39 +12,53 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header>
-    <div id="container-header">
-      <ion-item-divider>
+  <ion-header id="container-header">
+    <ion-item-divider>
 
-        <ion-avatar style="height: 100px; width: 130px;">
-          <img
-            src="https://media-exp3.licdn.com/dms/image/C4D03AQHZUjhINRA1ZQ/profile-displayphoto-shrink_400_400/0/1592218764558?e=1629331200&v=beta&t=_1Dhd0zAd8_5tjclQXtXA7bJqm_QBb_0jFfapRnImsk">
-        </ion-avatar>
+      <ion-avatar style="height: 100px; width: 100px;" slot="start">
+        <img
+          src="https://media-exp3.licdn.com/dms/image/C4D03AQHZUjhINRA1ZQ/profile-displayphoto-shrink_400_400/0/1592218764558?e=1629331200&v=beta&t=_1Dhd0zAd8_5tjclQXtXA7bJqm_QBb_0jFfapRnImsk">
+      </ion-avatar>
 
-        <ion-item lines="none" style="width: 100%">
-          <ion-label class="ion-text-center">
-            Publications <br/><br/>25
-          </ion-label>
-          <ion-label class="ion-text-center">
-            Collections <br/><br/>25
-          </ion-label>
-        </ion-item>
-      </ion-item-divider>
+      <ion-item lines="none" style="width: 100%">
+        <ion-label class="ion-text-center">
+          Publications <br/><br/>25
+        </ion-label>
+        <ion-label class="ion-text-center">
+          Collections <br/><br/>25
+        </ion-label>
+      </ion-item>
+    </ion-item-divider>
 
-      <app-pin id="filter" [pin]="pin" (pinOutput)="onSelectedPin($event)"></app-pin>
+    <app-pin [pin]="pin" (pinOutput)="onSelectPin($event)"></app-pin>
 
-      <ion-segment value="publications">
-        <ion-segment-button value="publications">
-          <ion-label>Publications</ion-label>
-        </ion-segment-button>
-        <ion-segment-button value="collections">
-          <ion-label>Collections</ion-label>
-        </ion-segment-button>
-      </ion-segment>
-    </div>
+    <ion-segment [(ngModel)]="selectedSegment">
+      <ion-segment-button [value]="item" *ngFor="let item of segments;let i = index" (click)="onSelectSegment(i)">
+        <ion-label>{{item}}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </ion-header>
 
   <div id="container">
-
+    <ion-slides #slides (ionSlideTransitionStart)="onChangeSlide()" [options]="slideOpts" style="height: 100%">
+      <ion-slide>
+        <ion-virtual-scroll [items]="collections" approxItemHeight="460px">
+          <ion-row *virtualItem="let collection">
+            <ion-col>
+              <app-image [collections]="collection"></app-image>
+            </ion-col>
+          </ion-row>
+        </ion-virtual-scroll>
+      </ion-slide>
+      <ion-slide>
+        <ion-virtual-scroll [items]="collections" approxItemHeight="460px">
+          <ion-row *virtualItem="let collection">
+            <ion-col>
+              <app-image [collections]="collection"></app-image>
+            </ion-col>
+          </ion-row>
+        </ion-virtual-scroll>
+      </ion-slide>
+    </ion-slides>
   </div>
 </ion-content>
