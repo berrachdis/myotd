@@ -11,10 +11,14 @@ const routes: Routes = [
     }
   },
   {
+    path: 'album',
+    loadChildren: () => import('./core/album/album.module').then( m => m.AlbumPageModule)
+  },
+  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
+  }
 ];
 
 @NgModule({

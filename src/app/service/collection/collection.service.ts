@@ -21,4 +21,8 @@ export class CollectionService {
   public getCollections(): Observable<Collection[][]> {
     return this.httpClient.get<Collection[][]>("assets/collections.json")
   }
+
+  public getCategories(): Observable<Collection[][]> {
+    return this.httpClient.get<Collection[][]>("assets/categories.json");
+  }
 }

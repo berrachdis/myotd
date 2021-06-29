@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title slot="start">
-      Home
+      Berrachdi Soufiane
     </ion-title>
     <ion-buttons slot="end">
       <ion-button>
@@ -32,7 +32,7 @@
 
     <app-pin [pin]="pin" (pinOutput)="onSelectPin($event)"></app-pin>
 
-    <ion-segment [(ngModel)]="selectedSegment">
+    <ion-segment [(ngModel)]="selectedSegment" color="primary">
       <ion-segment-button [value]="item" *ngFor="let item of segments;let i = index" (click)="onSelectSegment(i)">
         <ion-label>{{item}}</ion-label>
       </ion-segment-button>
@@ -40,15 +40,33 @@
   </ion-header>
 
   <div id="container">
-    <ion-slides #slides (ionSlideTransitionStart)="onChangeSlide()" [options]="slideOpts" style="height: 100%">
+    <ion-slides #slides (ionSlideTransitionStart)="onChangeSlide()" scrollbar="true" [options]="slideOpts" style="position: relative;top: -25px; height: 100%">
       <ion-slide>
-        <ion-virtual-scroll [items]="collections" approxItemHeight="460px">
-          <ion-row *virtualItem="let collection">
+        <ion-list *ngIf="selectedSegment == 'Publication'">
+          <ion-row>
             <ion-col>
-              <app-image [collections]="collection"></app-image>
+              <ion-img src="assets/mock/categories/teeshirt.png" [routerLink]="['/album']"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img src="assets/mock/categories/shirt.png" [routerLink]="['/album']"></ion-img>
             </ion-col>
           </ion-row>
-        </ion-virtual-scroll>
+          <ion-row>
+            <ion-col>
+              <ion-img src="assets/mock/categories/dress.png" [routerLink]="['/album']"></ion-img>
+            </ion-col>
+            <ion-col>
+              <ion-img src="assets/mock/categories/skirt.png" [routerLink]="['/album']"></ion-img>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-img src="assets/mock/categories/tee-shirt.png" [routerLink]="['/album']"></ion-img>
+            </ion-col>
+            <ion-col>
+            </ion-col>
+          </ion-row>
+        </ion-list>
       </ion-slide>
       <ion-slide>
         <ion-virtual-scroll [items]="collections" approxItemHeight="460px">

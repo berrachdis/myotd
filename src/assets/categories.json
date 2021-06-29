@@ -1,0 +1,45 @@
+[
+  [
+    {
+      "id": 1,
+      "images": [
+        {
+          "name": "t-shirt-1",
+          "url": "assets/mock/categories/teeshirt.png"
+        },
+        {
+          "name": "t-jeans-2",
+          "url": "assets/mock/categories/shirt.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "images": [
+        {
+          "name": "t-shirt-2",
+          "url": "assets/mock/categories/dress.png"
+        },
+        {
+          "name": "t-jeans-2",
+          "url": "assets/mock/categories/skirt.png"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "id": 3,
+      "images": [
+        {
+          "name": "t-shirt-2",
+          "url": "assets/mock/categories/tee-shirt.png"
+        },
+        {
+          "name": "t-jeans-2",
+          "url": "assets/mock/categories/shirt.png"
+        }
+      ]
+    }
+  ]
+]
