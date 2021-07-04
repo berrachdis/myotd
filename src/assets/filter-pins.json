@@ -5,65 +5,19 @@
       "parent": "ALL",
       "name": "top",
       "url": "url",
-      "activated": "false",
-      "childPin": [
-        {
-          "name": "tee-shirt",
-          "url": "url",
-          "activated": "false"
-        },
-        {
-          "name": "tank",
-          "url": "url",
-          "activated": "false"
-        },
-        {
-          "name": "sweat",
-          "url": "url",
-          "activated": "false"
-        }
-      ]
+      "activated": "false"
     },
     {
       "parent": "ALL",
       "name": "bottom",
       "url": "url",
-      "activated": "",
-      "childPin": [
-        {
-          "name": "pant",
-          "url": "url",
-          "activated": "false"
-        },
-        {
-          "name": "skirt",
-          "url": "url",
-          "activated": "false"
-        },
-        {
-          "name": "short",
-          "url": "url",
-          "activated": "false"
-        }
-      ]
+      "activated": "false"
     },
     {
       "parent": "ALL",
-      "name": "shoe",
+      "name": "feet",
       "url": "url",
-      "activated": "false",
-      "childPin": [
-        {
-          "name": "sport",
-          "url": "url",
-          "activated": "false"
-        },
-        {
-          "name": "boots",
-          "url": "url",
-          "activated": "false"
-        }
-      ]
+      "activated": "false"
     }
   ]
 }

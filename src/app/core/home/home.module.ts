@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
 import {PinComponent} from "../../shared/pin/pin.component";
 import {ImageComponent} from "../../shared/image/image.component";
+import {PinFilterPipe} from "../../pipe/pin-filter.pipe";
 
 
 @NgModule({
@@ -16,6 +17,6 @@ import {ImageComponent} from "../../shared/image/image.component";
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, PinComponent, ImageComponent]
+  declarations: [HomePage, PinComponent, ImageComponent, PinFilterPipe]
 })
 export class HomePageModule {}

@@ -1,32 +1,3 @@
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 45%;
-  //transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
-
-ion-header ion-toolbar {
-  height: 54px;
-}
-
 #container-header {
   position: fixed;
   z-index: 100;
@@ -34,8 +5,25 @@ ion-header ion-toolbar {
   width: 100%;
 }
 
+ion-header ion-toolbar {
+  height: 54px;
+}
+
+#container-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 42%;
+}
 
 ion-img {
   width: 150px;
   height: 150px;
+}
+
+ion-grid {
+  --ion-grid-padding-sm: 20px;
+  --ion-grid-padding-md: 30px;
+  --ion-grid-padding-lg: 40px;
+  --ion-grid-padding-xl: 100px;
 }

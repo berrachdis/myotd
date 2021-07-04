@@ -10,6 +10,6 @@ export class PinResolver implements Resolve<Pin> {
   constructor(private pinService: PinService) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Pin> | Promise<Pin> | Pin {
-    return this.pinService.getPins();
+    return this.pinService.getCategoriesFilter();
   }
 }

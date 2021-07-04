@@ -16,11 +16,11 @@ export interface Pin {
 export class PinService {
   constructor(private httpClient: HttpClient) { }
 
-  public getPins(): Observable<Pin> {
-    return this.httpClient.get<Pin>("assets/home-pins.json");
+  public getCollectionsFilter(): Observable<Pin> {
+    return this.httpClient.get<Pin>("assets/collection-pins.json");
   }
 
-  public getFilterPins(): Observable<Pin> {
+  public getCategoriesFilter(): Observable<Pin> {
     return this.httpClient.get<Pin>("assets/filter-pins.json");
   }
 }

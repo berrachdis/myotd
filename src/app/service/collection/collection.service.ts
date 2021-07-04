@@ -8,6 +8,7 @@ interface Image {
 }
 
 export interface Collection {
+  id: string;
   images: Image[];
 }
 
@@ -18,11 +19,7 @@ export class CollectionService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getCollections(): Observable<Collection[][]> {
-    return this.httpClient.get<Collection[][]>("assets/collections.json")
-  }
-
-  public getCategories(): Observable<Collection[][]> {
-    return this.httpClient.get<Collection[][]>("assets/categories.json");
+  public getCollections(): Observable<Collection[]> {
+    return this.httpClient.get<Collection[]>("assets/collections.json")
   }
 }

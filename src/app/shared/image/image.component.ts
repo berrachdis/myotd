@@ -7,8 +7,8 @@ import {Collection} from "../../service/collection/collection.service";
   styleUrls: ['./image.component.scss'],
 })
 export class ImageComponent implements OnInit {
-  @Input('collections')
-  collections: Collection[];
+  @Input('collection')
+  collection: Collection;
 
   constructor() { }
 
