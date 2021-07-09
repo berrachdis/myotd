@@ -1,0 +1,646 @@
+[
+  {
+    "id": 1,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-1",
+        "imageURL": "assets/mock/linen-t-shirt.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-1",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-2",
+        "imageURL": "assets/mock/linen-t-shirt-p.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-2",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-2",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-3",
+        "imageURL": "assets/mock/linen-t-shirt-y.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-3",
+        "imageURL": "assets/mock/strong-jeans-g.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-3",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "userId": "123",
+    "season": "SPRING",
+    "style": "SPORT",
+    "images": [
+      {
+        "name": "t-shirt-4",
+        "imageURL": "assets/mock/linen-t-shirt-b.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-jeans-4",
+        "imageURL": "assets/mock/strong-jeans-bl.jpg",
+        "thumbnailUrl": ""
+      },
+      {
+        "name": "t-shoe-4",
+        "imageURL": "assets/mock/shoe-3.jpg",
+        "thumbnailUrl": ""
+      }
+    ]
+  }
+]

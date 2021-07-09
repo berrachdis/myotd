@@ -1,0 +1,97 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title slot="start">
+      {{user.username}}
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="settings"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header id="container-headers">
+    <ion-item-divider>
+
+      <ion-avatar style="height: 100px; width: 100px;" slot="start">
+        <img [src]="user.imageURL">
+      </ion-avatar>
+
+      <ion-item lines="none" style="width: 100%">
+        <ion-label class="ion-text-center">
+          Publications <br/><br/>25<!--{{user.publication_count}}-->
+        </ion-label>
+        <ion-label class="ion-text-center">
+          Collections <br/><br/>25<!--{{user.collection_count}}-->
+        </ion-label>
+      </ion-item>
+    </ion-item-divider>
+  </ion-header>
+
+  <div id="container-menu">
+    <app-pin [pin]="pin" (pinOutput)="onSelectPin($event)"></app-pin>
+
+    <ion-segment [(ngModel)]="selectedSegment" color="primary">
+      <ion-segment-button [value]="item" *ngFor="let item of segments;let i = index" (click)="onSelectSegment(i)">
+        <ion-label>{{item}}</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    <div id="hr"></div>
+  </div>
+
+  <div id="container-content">
+    <ion-slides #slides (ionSlideTransitionStart)="onChangeSlide()" scrollbar="true" [options]="slideOpts">
+
+      <ion-slide>
+        <ion-grid *ngIf="selectedSegment == segments[0]">
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="6" size-sm="6" size-md="4" size-lg="3" size-xl="2"
+                     *ngFor="let category of categories | pinFilter:selectedPin">
+              <ion-card style="border-radius: 10px">
+                <ion-card-content (click)="navigateTo('/album', category.id)">
+                  <img [src]="category.imageURL">
+                  <ion-label>
+                    <p>{{ category.title }}</p>
+                  </ion-label>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-grid>
+          <ion-virtual-scroll [items]="collections" approxItemHeight="184px" *ngIf="selectedSegment == segments[1]">
+            <ion-card style="border-radius: 10px" *virtualItem="let collection" style="height: 184px">
+              <ion-card-content>
+                <ion-row>
+                  <ion-col size="4" size-sm="4" size-md="4" size-lg="4" size-xl="4"
+                           *ngFor="let image of collection.images">
+                    <ion-img style="width: 100px; height: 100px;" [src]="image.imageURL"></ion-img>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+              <ion-item>
+                <ion-buttons>
+                  <ion-button>
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </ion-button>
+                  <ion-button>
+                    <ion-icon name="chatbox-outline"></ion-icon>
+                  </ion-button>
+                  <ion-button>
+                    <ion-icon name="share-social-outline"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-item>
+            </ion-card>
+          </ion-virtual-scroll>
+        </ion-grid>
+      </ion-slide>
+
+    </ion-slides>
+  </div>
+</ion-content>

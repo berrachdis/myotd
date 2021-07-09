@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "title": "Shirts",
+    "type": "TOP",
+    "imageURL": "assets/mock/categories/teeshirt.png"
+  },
+  {
+    "id": 1,
+    "title": "Skirts",
+    "type": "BOTTOM",
+    "imageURL": "assets/mock/categories/shirt.png"
+  },
+  {
+    "id": 2,
+    "title": "Dress",
+    "type": "TOP",
+    "imageURL": "assets/mock/categories/dress.png"
+  },
+  {
+    "id": 3,
+    "title": "Skirts",
+    "type": "BOTTOM",
+    "imageURL": "assets/mock/categories/skirt.png"
+  },
+  {
+    "id": 4,
+    "title": "Shirts",
+    "type": "TOP",
+    "imageURL": "assets/mock/categories/tee-shirt.png"
+  }
+]

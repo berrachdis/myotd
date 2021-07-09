@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>pants</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-virtual-scroll [items]="albums" approxItemHeight="184px">
+    <ion-card style="border-radius: 10px" *virtualItem="let album">
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="6" size-sm="4" size-md="4" size-lg="4" size-xl="4"
+                   *ngFor="let image of album.images">
+            <ion-img style="width: 100px; height: 100px;" [src]="image.url"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </ion-virtual-scroll>
+  <!--<ion-list>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/mock/linen-t-shirt-p.jpg"></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/mock/strong-jeans-bl.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-img src="assets/mock/strong-jeans-b.jpg"></ion-img>
+      </ion-col>
+      <ion-col>
+        <ion-img src="assets/mock/shoe-3.jpg"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-list>-->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button size="small">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
