@@ -2,13 +2,13 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {IonSlides, NavController} from "@ionic/angular";
 
-import {CollectionService} from "../../services/collection/collection.service";
-import {CategoryService} from "../../services/category/category.service";
+import {CollectionService} from "../../core/services/collection/collection.service";
+import {CategoryService} from "../../core/services/category/category.service";
 
-import {Pin} from "../../models/pin";
-import {Collection} from "../../models/collection";
-import {Category} from "../../models/category";
-import {User} from "../../models/user";
+import {Pin} from "../../core/interfaces/pin";
+import {Collection} from "../../core/interfaces/collection";
+import {Category} from "../../core/interfaces/category";
+import {User} from "../../core/interfaces/user";
 
 @Component({
   selector: 'app-home',

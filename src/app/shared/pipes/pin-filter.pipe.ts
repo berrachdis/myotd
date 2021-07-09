@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import {Category} from "../../core/models/category";
-import {Pin} from "../../core/models/pin";
+import {Category} from "../../core/interfaces/category";
+import {Pin} from "../../core/interfaces/pin";
 
 @Pipe({
   name: 'pinFilter'

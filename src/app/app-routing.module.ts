@@ -6,14 +6,14 @@ import {AccountResolver} from "./core/resolvers/account/account-resolver";
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./core/pages/home/home.module').then(m => m.HomePageModule),
+    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule),
     resolve: {
       account: AccountResolver
     }
   },
   {
     path: 'album/:categoryId',
-    loadChildren: () => import('./core/pages/album/album.module').then(m => m.AlbumPageModule)
+    loadChildren: () => import('./pages/album/album.module').then(m => m.AlbumPageModule)
   },
   {
     path: '',

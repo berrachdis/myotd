@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 
-import {Collection} from "../../../core/models/collection";
+import {Collection} from "../../../core/interfaces/collection";
 
 @Component({
   selector: 'app-image',
