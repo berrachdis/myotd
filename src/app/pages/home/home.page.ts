@@ -9,6 +9,7 @@ import {Pin} from "../../core/interfaces/pin";
 import {Collection} from "../../core/interfaces/collection";
 import {Category} from "../../core/interfaces/category";
 import {User} from "../../core/interfaces/user";
+import {Filter} from "../../core/interfaces/filter";
 
 @Component({
   selector: 'app-home',
@@ -17,6 +18,7 @@ import {User} from "../../core/interfaces/user";
 })
 export class HomePage implements OnInit{
   private pin : Pin;
+  private filter: Filter;
   private selectedPin : Pin;
   private collections:Collection[];
   private categories: Category[];
@@ -38,6 +40,7 @@ export class HomePage implements OnInit{
 
   ngOnInit() {
     this.initSegments();
+    this.initFilters();
     this.initAccountData();
     this.initCategoriesPin();
     this.initCategories();
@@ -46,6 +49,14 @@ export class HomePage implements OnInit{
 
   private initSegments(): void {
     this.selectedSegment = this.segments[0];
+  }
+
+  private initFilters(): void {
+    this.route.data
+      .subscribe(
+        (data: {filter: Filter}) => this.filter = data.filter,
+        error => console.error(error)
+      );
   }
 
   private initAccountData(): void {
@@ -57,7 +68,7 @@ export class HomePage implements OnInit{
   }
 
   private initCategoriesPin(): void {
-    this.pin = this.user.categoryPin;
+    this.pin = this.filter.categoryPin;
   }
 
   private initCategories() : void {
@@ -77,7 +88,7 @@ export class HomePage implements OnInit{
   }
 
   private initCollectionsPin(): void {
-    this.pin = this.user.collectionPin;
+    this.pin = this.filter.collectionPin;
   }
 
   private onSelectPin(event : Pin): void {

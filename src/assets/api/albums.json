@@ -6,7 +6,7 @@
     "images": [
       {
         "name": "t-shirt-1",
-        "url": "assets/mock/linen-t-shirt.jpg",
+        "url": "assets/mock/strong-jeans-bl.jpg",
         "thumbnailUrl": ""
       },
       {
@@ -16,29 +16,7 @@
       },
       {
         "name": "t-shoe-1",
-        "url": "assets/mock/shoe-3.jpg",
-        "thumbnailUrl": ""
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "categoryId": 0,
-    "userId": "",
-    "images": [
-      {
-        "name": "t-shirt-2",
-        "url": "assets/mock/linen-t-shirt-p.jpg",
-        "thumbnailUrl": ""
-      },
-      {
-        "name": "t-jeans-2",
-        "url": "assets/mock/strong-jeans-bl.jpg",
-        "thumbnailUrl": ""
-      },
-      {
-        "name": "t-shoe-2",
-        "url": "assets/mock/shoe-3.jpg",
+        "url": "assets/mock/strong-jeans-g.jpg",
         "thumbnailUrl": ""
       }
     ]

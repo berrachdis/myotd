@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 import {AccountResolver} from "./core/resolvers/account/account-resolver";
+import {FilterResolver} from "./core/resolvers/filter/filter-resolver";
 
 const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule),
     resolve: {
-      account: AccountResolver
+      account: AccountResolver,
+      filter: FilterResolver
     }
   },
   {
