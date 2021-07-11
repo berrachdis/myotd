@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, NgZone, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 
-import {Pin} from "../../../core/interfaces/pin";
+import {Pin} from "../../../core/models/Pin";
 
 @Component({
   selector: 'app-pin',

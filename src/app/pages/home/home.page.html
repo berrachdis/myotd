@@ -4,7 +4,7 @@
       {{user.username}}
     </ion-title>
     <ion-buttons slot="end">
-      <ion-button>
+      <ion-button (click)="showSettingActionSheet()">
         <ion-icon slot="icon-only" name="settings"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -50,7 +50,7 @@
             <ion-col size="6" size-sm="6" size-md="4" size-lg="3" size-xl="2"
                      *ngFor="let category of categories | pinFilter:selectedPin">
               <ion-card style="border-radius: 10px">
-                <ion-card-content (click)="navigateTo('/album', category.id)">
+                <ion-card-content (click)="navigateTo('/album', category.id, category.title)">
                   <img [src]="category.imageURL">
                   <ion-label>
                     <p>{{ category.title }}</p>

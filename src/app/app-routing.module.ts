@@ -14,7 +14,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'album/:categoryId',
+    path: 'album/:categoryId/:categoryTitle',
     loadChildren: () => import('./pages/album/album.module').then(m => m.AlbumPageModule)
   },
   {

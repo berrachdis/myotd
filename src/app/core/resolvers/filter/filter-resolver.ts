@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 
 import {FilterService} from "../../services/filter/filter.service";
 
-import {Filter} from "../../interfaces/filter";
+import {Filter} from "../../models/Filter";
 
 @Injectable({
   providedIn: 'root'
