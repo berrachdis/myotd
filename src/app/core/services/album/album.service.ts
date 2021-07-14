@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
-import {Observable} from "rxjs";
+import {Observable, of} from "rxjs";
 
 import {Album} from "../../models/Album";
 
@@ -15,5 +15,9 @@ export class AlbumService {
   public getAlbums(categoryId: string): Observable<Album[]> {
     const ALBUM_URL = "assets/api/albums?categoryId=" + categoryId;
     return this.httpClient.get<Album[]>("assets/api/albums.json");
+  }
+
+  public getPublicationsCount(userId: string): Observable<number> {
+    return of(19);
   }
 }

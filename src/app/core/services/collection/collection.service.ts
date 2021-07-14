@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
-import {Observable} from "rxjs";
+import {Observable, of} from "rxjs";
 
 import {Collection} from "../../models/Collection";
 
@@ -14,5 +14,9 @@ export class CollectionService {
 
   public getCollections(): Observable<Collection[]> {
     return this.httpClient.get<Collection[]>("assets/api/collections.json")
+  }
+
+  public getCollectionsCount(userId: string): Observable<number> {
+    return of(20);
   }
 }
