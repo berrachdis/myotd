@@ -12,9 +12,9 @@ export class AlbumService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public getAlbums(categoryId: string): Observable<Album[]> {
+  public getAlbums(categoryId: string): Observable<Album> {
     const ALBUM_URL = "assets/api/albums?categoryId=" + categoryId;
-    return this.httpClient.get<Album[]>("assets/api/albums.json");
+    return this.httpClient.get<Album>("assets/api/albums.json");
   }
 
   public getPublicationsCount(userId: string): Observable<number> {

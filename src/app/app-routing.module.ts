@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 import {AccountResolver} from "./core/resolvers/account/account-resolver";
 import {FilterResolver} from "./core/resolvers/filter/filter-resolver";
+import {AlbumResolver} from "./core/resolvers/album/album-resolver";
 
 const routes: Routes = [
   {
@@ -15,12 +16,19 @@ const routes: Routes = [
   },
   {
     path: 'album/:categoryId/:categoryTitle',
-    loadChildren: () => import('./pages/album/album.module').then(m => m.AlbumPageModule)
+    loadChildren: () => import('./pages/album/album.module').then(m => m.AlbumPageModule),
+    resolve: {
+      album: AlbumResolver
+    }
   },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'camera',
+    loadChildren: () => import('./pages/camera/camera.module').then( m => m.CameraPageModule)
   }
 ];
 

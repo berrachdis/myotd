@@ -7,26 +7,44 @@
   },
   {
     "id": 1,
-    "title": "Skirts",
+    "title": "Shirts",
+    "type": "TOP",
+    "imageURL": "assets/mock/categories/tee-shirt.png"
+  },
+  {
+    "id": 2,
+    "title": "Tank",
+    "type": "TOP",
+    "imageURL": "assets/mock/categories/tank.png"
+  },
+  {
+    "id": 3,
+    "title": "Pants",
     "type": "BOTTOM",
     "imageURL": "assets/mock/categories/shirt.png"
   },
   {
-    "id": 2,
+    "id": 4,
+    "title": "Shorts",
+    "type": "BOTTOM",
+    "imageURL": "assets/mock/categories/short.png"
+  },
+  {
+    "id": 5,
     "title": "Dress",
     "type": "TOP",
     "imageURL": "assets/mock/categories/dress.png"
   },
   {
-    "id": 3,
+    "id": 6,
     "title": "Skirts",
     "type": "BOTTOM",
     "imageURL": "assets/mock/categories/skirt.png"
   },
   {
-    "id": 4,
-    "title": "Shirts",
-    "type": "TOP",
-    "imageURL": "assets/mock/categories/tee-shirt.png"
+    "id": 7,
+    "title": "Shoes",
+    "type": "FEET",
+    "imageURL": "assets/mock/categories/shoes.jpg"
   }
 ]

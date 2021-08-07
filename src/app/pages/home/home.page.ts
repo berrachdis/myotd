@@ -168,11 +168,12 @@ export class HomePage implements OnInit {
             event.target.complete();
             this.virtualScroll.checkEnd();
             if (this.collections.length >= 100) {
-              console.log("collections done")
+              console.log("Collections done")
               event.target.disabled = true;
             }
           },
-          error => console.error(error)
+          error => console.error(error),
+          () => console.info("Collections loaded")
         );
     }, 1000);
   }
